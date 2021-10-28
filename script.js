@@ -15,8 +15,9 @@ $(document).ready(function () {
     $contentlis.hide().eq(index).show();
   });
 
-  const checkboxValues = JSON.parse(localStorage.getItem("checkboxValues")) || {},
-    $checkboxes = $("#checkbox-container :checkbox");
+  const checkboxValues =
+      JSON.parse(localStorage.getItem("checkboxValues")) || {},
+    $checkboxes = $(".checkbox-container :checkbox");
 
   $checkboxes.on("change", function () {
     $checkboxes.each(function () {
@@ -31,7 +32,7 @@ $(document).ready(function () {
     $("#" + key).prop("checked", value);
   });
 
-  $('i').click(function() {
-    $('.details').slideToggle();
-});    
+  $("i").click(function () {
+    $(this).next(".details").slideToggle('fast');
+  });
 });

@@ -12,10 +12,11 @@ body {
   background-color: #595b9794;
   font-family: "Roboto", sans-serif;
   color: #062957;
+  line-height: 1.6;
 }
 
 header {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 header .heading {
   text-align: center;
@@ -64,15 +65,15 @@ header .heading {
   display: none;
 }
 
-#checkbox-container {
+.checkbox-container {
   margin: 10px 5px;
 }
 
-#checkbox-container div {
+.checkbox-container div {
   margin-bottom: 5px;
 }
 
-#checkbox-container button {
+.checkbox-container button {
   margin-top: 5px;
 }
 
@@ -81,14 +82,22 @@ header .heading {
   display: none;
   margin: 10px;
   padding: 10px;
-  width: 700px;
+  width: 800px;
   color: #000;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
   color: #0058d3;
   font-weight: bold;
+}
+
+.completion {
+  background-color: #ccc;
+  margin-top: 15px;
+  text-align: center;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
