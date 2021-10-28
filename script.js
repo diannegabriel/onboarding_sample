@@ -30,4 +30,8 @@ $(document).ready(function () {
   $.each(checkboxValues, function (key, value) {
     $("#" + key).prop("checked", value);
   });
+
+  $('i').click(function() {
+    $('.details').slideToggle();
+});    
 });
